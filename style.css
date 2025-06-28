@@ -1,0 +1,41 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+
+  animation-name: box-animation;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+
+  /* transform: translate(200px, 100px); */
+
+  /* transform: rotateX(60deg); */
+  /* transform: rotateZ(45deg); */
+}
+
+@keyframes box-animation {
+  0% {
+    background-color: brown;
+    color: yellow;
+
+    transform: translateX(0px) rotateZ(0deg);
+  }
+  50% {
+    border-radius: 50%;
+    background-color: red;
+    color: green;
+    transform: translateX(500px) rotateZ(3600deg);
+  }
+  100% {
+    background-color: chocolate;
+    color: black;
+    border-radius: 0px;
+    transform: translateX(0px) rotateZ(0deg);
+  }
+}
